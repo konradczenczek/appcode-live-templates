@@ -1,5 +1,5 @@
 # appcode-live-templates
-Collection on live templates for AppCode
+Collection of live templates for AppCode
 
 ### wself
 Insert weak reference to self.
