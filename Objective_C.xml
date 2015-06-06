@@ -1,0 +1,38 @@
+<templateSet group="Objective-C">
+  <template name="wself" value="__weak typeof(self) weakSelf = self;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="objc" value="true" />
+      <option name="OC_DECLARATION" value="true" />
+      <option name="OC_STATEMENT" value="true" />
+      <option name="OC_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="after" value="dispatch_after(dispatch_time(DISPATCH_TIME_NOW, $TIME$ * NSEC_PER_SEC), dispatch_get_main_queue(), ^{&#10;    $CODE$&#10;});" toReformat="false" toShortenFQNames="true">
+    <variable name="TIME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CODE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="objc" value="true" />
+      <option name="OC_DECLARATION" value="true" />
+      <option name="OC_STATEMENT" value="true" />
+      <option name="OC_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="propns" value="@property(nonatomic, strong) $DECLARATION$;$END$" description="@property(nonatomic, strong)" toReformat="false" toShortenFQNames="true">
+    <variable name="DECLARATION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="objc" value="true" />
+      <option name="OC_DECLARATION" value="true" />
+      <option name="OC_STATEMENT" value="true" />
+      <option name="OC_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="privcat" value="@interface $CLASS_NAME$ ()&#10;$END$&#10;@end" description="private category" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASS_NAME" expression="className()" defaultValue="fileNameWithoutExtension()" alwaysStopAt="true" />
+    <context>
+      <option name="objc" value="true" />
+      <option name="OC_DECLARATION" value="true" />
+      <option name="OC_STATEMENT" value="true" />
+      <option name="OC_EXPRESSION" value="true" />
+    </context>
+  </template>
+</templateSet>
