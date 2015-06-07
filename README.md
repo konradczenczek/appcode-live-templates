@@ -15,6 +15,12 @@ dispatch_after(dispatch_time(DISPATCH_TIME_NOW, $TIME$ * NSEC_PER_SEC), dispatch
 });
 ```
 
+### dtime
+Insert dispatch time code block.
+```
+dispatch_time(DISPATCH_TIME_NOW, $SECONDS$ * NSEC_PER_SEC)
+```
+
 ### propns
 Insert nonatomic strong property.
 ```
