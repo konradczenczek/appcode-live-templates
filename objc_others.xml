@@ -1,0 +1,19 @@
+<templateSet group="objc-others">
+  <template name="wself" value="__weak typeof(self) weakSelf = self;" description="weak self" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="objc" value="false" />
+      <option name="OC_DECLARATION" value="false" />
+      <option name="OC_STATEMENT" value="true" />
+      <option name="OC_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="privcat" value="@interface $CLASS_NAME$ ()&#10;$END$&#10;@end" description="private category" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASS_NAME" expression="className()" defaultValue="fileNameWithoutExtension()" alwaysStopAt="true" />
+    <context>
+      <option name="objc" value="false" />
+      <option name="OC_DECLARATION" value="true" />
+      <option name="OC_STATEMENT" value="false" />
+      <option name="OC_EXPRESSION" value="false" />
+    </context>
+  </template>
+</templateSet>

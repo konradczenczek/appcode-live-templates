@@ -21,10 +21,24 @@ Insert dispatch time code block.
 dispatch_time(DISPATCH_TIME_NOW, $SECONDS$ * NSEC_PER_SEC)
 ```
 
+### dmain
+Insert dispatch async on main queue block.
+```
+dispatch_async(dispatch_get_main_queue(), ^{
+  $END$
+})
+```
+
 ### propns
 Insert nonatomic strong property.
 ```
 @property(nonatomic, strong) $DECLARATION$;$END$
+```
+
+### propnw
+Insert nonatomic weak property.
+```
+@property(nonatomic, weak) $DECLARATION$;$END$
 ```
 
 ### privcat

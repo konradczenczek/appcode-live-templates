@@ -1,0 +1,20 @@
+<templateSet group="objc-properties">
+  <template name="propns" value="@property(nonatomic, strong) $DECLARATION$;$END$" description="@property(nonatomic, strong)" toReformat="false" toShortenFQNames="true">
+    <variable name="DECLARATION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="objc" value="false" />
+      <option name="OC_DECLARATION" value="true" />
+      <option name="OC_STATEMENT" value="false" />
+      <option name="OC_EXPRESSION" value="false" />
+    </context>
+  </template>
+  <template name="propnw" value="@property(nonatomic, weak) $DECLARATION$;$END$" description="@property(nonatomic, weak)" toReformat="false" toShortenFQNames="true">
+    <variable name="DECLARATION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="objc" value="false" />
+      <option name="OC_DECLARATION" value="true" />
+      <option name="OC_STATEMENT" value="false" />
+      <option name="OC_EXPRESSION" value="false" />
+    </context>
+  </template>
+</templateSet>

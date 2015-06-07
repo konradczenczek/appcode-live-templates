@@ -1,0 +1,23 @@
+<templateSet group="objc-dispatch">
+  <template name="dmain" value="dispatch_async(dispatch_get_main_queue(), ^{&#10;    $END$      &#10;});" description="dispatch on main queue" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OC_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="after" value="dispatch_after(dispatch_time(DISPATCH_TIME_NOW, $TIME$ * NSEC_PER_SEC), dispatch_get_main_queue(), ^{&#10;    $CODE$&#10;});" description="dispatch after" toReformat="false" toShortenFQNames="true">
+    <variable name="TIME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CODE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="objc" value="false" />
+      <option name="OC_DECLARATION" value="false" />
+      <option name="OC_STATEMENT" value="false" />
+      <option name="OC_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="dtime" value="dispatch_time(DISPATCH_TIME_NOW, $SECONDS$ * NSEC_PER_SEC)" description="dispatch time" toReformat="false" toShortenFQNames="true">
+    <variable name="SECONDS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OC_EXPRESSION" value="true" />
+    </context>
+  </template>
+</templateSet>
