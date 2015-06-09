@@ -50,5 +50,5 @@ $END$
 ```
 
 ## Installation
-TODO
+Clone this repository in ```~/Library/Preferences/<product><version>/templates``` and restart AppCode.
 
