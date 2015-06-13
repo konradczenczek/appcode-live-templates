@@ -49,6 +49,12 @@ $END$
 @end
 ```
 
+### sformat
+Insert string with format snippet.
+```
+[NSString stringWithFormat:@"$FORMAT$", $ITEMS$];$END$
+```
+
 ## Installation
 Clone this repository in ```~/Library/Preferences/<product><version>/templates``` and restart AppCode.
 

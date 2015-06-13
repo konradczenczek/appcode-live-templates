@@ -16,4 +16,12 @@
       <option name="OC_EXPRESSION" value="false" />
     </context>
   </template>
+  <template name="sformat" value="[NSString stringWithFormat:@&quot;$FORMAT$&quot;, $ITEMS$];$END$" description="string format" toReformat="false" toShortenFQNames="true">
+    <variable name="FORMAT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEMS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OC_STATEMENT" value="false" />
+      <option name="OC_EXPRESSION" value="true" />
+    </context>
+  </template>
 </templateSet>
